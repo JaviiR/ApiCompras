@@ -1,7 +1,7 @@
 package com.vila.compras.controllers;
 
 import java.util.ArrayList;
-import java.util.Optional;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -44,7 +44,7 @@ public ProductModel updateProduct(@RequestBody ProductModel request,@PathVariabl
     return productService.updateProduct(request, id);
 }
 
-@DeleteMapping("/{id}")
+@DeleteMapping("/employed/{id}")
 public boolean deleteProduct(@PathVariable int id){
     return productService.deleteProduct(id);
 }
